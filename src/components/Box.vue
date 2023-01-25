@@ -18,6 +18,7 @@ export default defineComponent ({
 
 <style scoped>
 .box{
-    background: pink;
+    background: var(--tarefa-primario);
+    color: whitesmoke;
 }
 </style>
