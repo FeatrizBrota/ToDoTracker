@@ -6,7 +6,7 @@
                 <input type="text" class="input" placeholder="Qual tarefa você quer iniciar?" v-model="tarefa">
                 
             </div>
-            <div class="column">
+            <div class="column temporizador">
                 <Temporizador  @aoTemporizadorFinalizado="finalizarTarefa"/>
             </div>
         </div>

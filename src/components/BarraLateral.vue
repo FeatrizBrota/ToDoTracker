@@ -2,12 +2,12 @@
     <header :class="{'modo-escuro': modoEscuroAtivo}">
 
       <h1>
-        <img src="../assets/logo.png" alt="">
+        <img class="logo" src="../assets/logo.png" alt="">
       </h1>
 
       <button class="button" @click="alterarTema">
-        {{textoBotao}}
-      </button>
+        <i :class="[!modoEscuroAtivo ? 'fa-regular fa-lightbulb' : 'fa-solid fa-moon'] "></i>
+       </button>
         
         
     </header>
@@ -30,7 +30,7 @@ export default defineComponent({
   computed:{
     textoBotao(){
       if(this.modoEscuroAtivo){
-        return 'Desativar modo escuro'
+        return 'fa-solid fa-jedi'
       } 
         return 'Modo Escuro'
       
@@ -63,5 +63,9 @@ header {
     padding: 2.5rem;
     height: auto;
   }
+}
+.logo{
+  width: 50%;
+
 }
 </style>
